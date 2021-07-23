@@ -1,0 +1,36 @@
+/*================================================================================
+	Item Name: 
+	Version: 2.0
+	Author: 
+	Author URL: 
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+
+.accordion-buttons a {
+	padding: 0.5rem
+}
+
+.nav-tabs .nav-item {
+    position: relative;
+    width: 50%;
+}
+
+.navbar-brand img {
+    max-width: 180px;
+}
+
+li.nav-item.me-auto {
+    max-width: 80%;
+}
+
+.login-logo img {
+    width: 200px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
