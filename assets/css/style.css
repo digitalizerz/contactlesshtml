@@ -35,6 +35,11 @@ li.nav-item.me-auto {
     margin-left: 1rem;
 }
 
+.restaurant-title {
+    margin-left: 100px;
+    line-height: 2.3rem;
+}
+
 /* Buttons start here */
 
 .btn.btn-primary-outline {
