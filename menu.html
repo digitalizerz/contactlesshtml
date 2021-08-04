@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Manage Menus </title>
+    <title> Add Menu Items </title>
     <link rel="apple-touch-icon" href="assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
@@ -54,14 +54,19 @@
                 </ul>
             </div>
             <ul class="nav navbar-nav align-items-center ms-auto">
-                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user"><a class="dropdown-item" href="#"><i class="me-50" data-feather="user"></i> Profile</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="mail"></i> Inbox</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="message-square"></i> Chats</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="me-50" data-feather="settings"></i> Settings</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="credit-card"></i> Pricing</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="help-circle"></i> FAQ</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="power"></i> Logout</a>
-                    </div>
-                </li>
-            </ul>
+              <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                      <a class="dropdown-item" href="#"><i class="me-50" data-feather="grid"></i> Dashboard</a>
+                      <a class="dropdown-item" href="#"><i class="me-50" data-feather="menu"></i> Menu </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><i class="me-50" data-feather="user"></i> Profile</a>
+                      <a class="dropdown-item" href="#"><i class="me-50" data-feather="settings"></i> Settings</a>
+                      <a class="dropdown-item" href="#"><i class="me-50" data-feather="power"></i> Logout</a>
+                  </div>
+              </li>
+          </ul>
         </div>
     </nav>
     <!-- END: Header-->
@@ -105,7 +110,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="login.html"><i data-feather="log-out"></i><span class="menu-title text-truncate" data-i18n="Home">Logout</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="logout.html"><i data-feather="log-out"></i><span class="menu-title text-truncate" data-i18n="Home">Logout</span></a>
                 </li>
             </ul>
         </div>
@@ -117,51 +122,246 @@
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
+            <!-- Begin Page header-->
             <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="content-header-left col-md-4 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Menus Management</h2>
+                            <h2 class="content-header-title float-start mb-0">Manage Menus</h2>
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="content-body">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="alert alert-primary" role="alert">
-                            <div class="alert-body">
-                               <p> Manage your menus by adding new menu items, sides, flavors and more. Delete or deactivate menu items when not in use. </p>
-                            </div>
-                        </div>
+                <div class="content-header-right text-md-end col-md-8 col-12 d-md-block">
+                    <div class="mb-1 breadcrumb-right">
+                        <button type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuCategoryModal">
+                            <i data-feather="plus"></i> Add Menu Category
+                          </button>
+                          <a href="menu-add-sides.html" type="button" class="btn btn-outline-primary waves-effect waves-float waves-light">
+                            Add Sides
+                          </a>
+                          <a href="menu-add-flavors.html" type="button" class="btn btn-outline-primary waves-effect waves-float waves-light">
+                            Add Flavors
+                          </a>
                     </div>
                 </div>
 
-                <!-- Select Restaurant Dropdown starts here -->
-                <div class="row match-height">
-                    <div class="col-md-6 col-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">Create a menu</h4>
-                              </div>
-                          <div class="card-body">
-                            <div class="mb-1">
-                                <label class="form-label" for="basicSelect">Select a restaurant</label>
-                                <select class="form-select" id="basicSelect">
-                                  <option>Restaurant 1</option>
-                                  <option>Restaurant 2</option>
-                                  <option>Restaurant 3</option>
-                                </select>
-                              </div>  
-                            <div class="d-grid mb-1">
-                                <a href="menu-add.html" type="button" class="btn btn-primary waves-effect waves-float waves-light"> Continue</a>
-                            </div>     
-                          </div>
+                <!-- Add menu category modal-->
+                <div class="modal fade" id="addMenuCategoryModal" tabindex="-1" aria-labelledby="addMenuCategoryModalTitle" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="addMenuCategoryModalTitle"> Add Menu Category </h5> 
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+                        <div class="modal-body">
+                            <div class="mb-1">
+                                <label class="form-label" for="basicInput">Menu Category</label>
+                                <input type="text" class="form-control" id="basicInput" placeholder="Category" required>
+                              </div>
+                              <div class="mb-1">
+                                <label class="form-label" for="exampleFormControlTextarea1">Category Description (Optional)</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                              </div>
+                              <div class="d-grid mb-1">
+                                <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" data-bs-dismiss="modal">Save</button>
+                              </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <!-- Select Restaurant Dropdown ends here -->
+                  </div>
+                  <!-- Modal ends here-->
+                
+            </div>
+            <!-- End Page Header-->
+
+            <div class="content-body">
+                
+
+                <!-- Menu Accordions start here -->
+                <section id="accordion-with-margin">
+                    <div class="row">
+                      <div class="col-sm-12">
+                            <div class="accordion accordion-margin accordion-without-arrow" id="accordionMargin" data-toggle-hover="true">
+                              <div class="accordion-item">
+                                  <div class="row">
+                                  <div class="col-md-9">
+                                <h2 class="accordion-header" id="headingMarginOne">
+                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionMarginOne" aria-expanded="false" aria-controls="accordionMarginOne">
+                                    <i data-feather="menu"></i> &nbsp;  Main Category 1
+                                  </button>  
+                                </h2>
+                                </div>
+                                <div class="col-md-3 mt-1 mb-1 accordion-buttons">
+                                    <a type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#">
+                                        <i data-feather="folder-plus"></i>
+                                    </a>
+                                      <a type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuItemModal">
+                                        <i data-feather="plus"></i>
+                                      </a>
+                                      <a type="button" class="btn btn-primary blue-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuCategoryModal">
+                                        <i data-feather="edit"></i>
+                                      </a>
+                                      <a type="button" class="btn btn-primary red-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#">
+                                        <i data-feather="trash-2"></i>
+                                      </a>
+                                </div>
+                                </div>
+
+                                <div id="accordionMarginOne" class="accordion-collapse collapse" aria-labelledby="headingMarginOne" data-bs-parent="#accordionMargin" style="">
+                                  <div class="accordion-body">
+                                    
+                                   <div class="row">
+                                  <div class="col-md-9">
+                                <h5 class="mt-1">
+                                    <i data-feather="menu"></i> &nbsp;  Menu Item 1 
+                                </h5>
+                                </div>
+                                <div class="col-md-3 mt-1 mb-1 accordion-buttons">
+                                      <a type="button" class="btn btn-primary blue-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuItemModal">
+                                        <i data-feather="edit"></i>
+                                      </a>
+                                      <a type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#selectFlavorsandSidesModal">
+                                        <i data-feather="layers"></i>
+                                      </a>
+                                      <a type="button" class="btn btn-primary red-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#">
+                                        <i data-feather="trash-2"></i>
+                                      </a>
+                                </div>
+                                </div>
+
+
+                                  </div>
+                                </div>
+                              </div>
+                              
+                             
+                            </div>
+                      </div>
+                    </div>
+
+                     <!-- Add menu item modal starts here-->
+                <div class="modal fade" id="addMenuItemModal" tabindex="-1" aria-labelledby="addMenuMenuItemModalTitle" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="addMenuItemModalTitle"> Add new Menu Item </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-1">
+                                <label class="form-label" for="basicInput">Menu Item name</label>
+                                <input type="text" class="form-control" id="basicInput" placeholder="Item name" required>
+                              </div>
+                              <div class="mb-1">
+                                <label class="form-label" for="exampleFormControlTextarea1">Menu Item Description (Optional)</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                              </div>
+                              <div class="mb-1">
+                                <label class="form-label" for="basicInput">Item Price</label>
+                                <input type="text" class="form-control" id="basicInput" placeholder="Item Price" required>
+                              </div>
+                              <div class="form-check form-switch mb-1">
+                                <input type="checkbox" checked class="form-check-input" id="customSwitch1">
+                                <label class="form-check-label" for="customSwitch1"> Make this Item available on the menu</label>
+                              </div>
+                              <div class="form-check form-switch mb-1">
+                                <input type="checkbox" class="form-check-input" id="customSwitch2">
+                                <label class="form-check-label" for="customSwitch2"> Customers can pay for this item through the menu</label>
+                              </div>
+                              <div class="form-check form-switch mb-1">
+                                <input type="checkbox" class="form-check-input" id="customSwitch3">
+                                <label class="form-check-label" for="customSwitch3">Customers can send order notifications only</label>
+                              </div>
+                              <div class="form-check form-switch mb-1">
+                                <input type="checkbox" class="form-check-input" id="customSwitch4">
+                                <label class="form-check-label" for="customSwitch4"> Customers can only view item (no ordering/paying)</label>
+                              </div>
+
+
+                              <div class="d-grid mb-1">
+                                <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" data-bs-dismiss="modal">Save</button>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add menu item modal ends here-->
+
+
+                   <!-- Select Flavors/Sides modal starts here-->
+                <div class="modal fade" id="selectFlavorsandSidesModal" tabindex="-1" aria-labelledby="selectFlavorsandSidesModalTitle" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="selectFlavorsandSidesModalTitle"> Select Sides or Flavors </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body pt-0">
+                            <div class="card-body p-0">
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" id="sides-tab" data-bs-toggle="tab" href="#sides" aria-controls="sides" role="tab" aria-selected="true">Sides</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="flavors-tab" data-bs-toggle="tab" href="#flavors" aria-controls="flavors" role="tab" aria-selected="false">Flavors</a>
+                                  </li>
+                                </ul>
+                                <div class="tab-content">
+                                  <div class="tab-pane active" id="sides" aria-labelledby="sides-tab" role="tabpanel">
+                                    <p>
+                                      Please select your sides.
+                                    </p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="side1" value="unchecked">
+                                        <label class="form-check-label" for="side1">Side 1</label>
+                                      </div>
+                                      <div class="form-check mt-1">
+                                        <input class="form-check-input" type="checkbox" id="side2" value="unchecked">
+                                        <label class="form-check-label" for="side2">Side 2</label>
+                                      </div>
+                                      <div class="form-check mt-1">
+                                        <input class="form-check-input" type="checkbox" id="side3" value="unchecked">
+                                        <label class="form-check-label" for="side3">Side 3</label>
+                                      </div>
+                                      <div class="form-check mt-1">
+                                        <input class="form-check-input" type="checkbox" id="side4" value="unchecked">
+                                        <label class="form-check-label" for="side4">Side 4</label>
+                                      </div>
+                                  </div>
+                                  <div class="tab-pane" id="flavors" aria-labelledby="flavors-tab" role="tabpanel">
+                                    <p>
+                                        Please select your flavors.
+                                      </p>
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="flavor1" value="unchecked">
+                                          <label class="form-check-label" for="flavor1">Flavor 1</label>
+                                        </div>
+                                        <div class="form-check mt-1">
+                                          <input class="form-check-input" type="checkbox" id="flavor2" value="unchecked">
+                                          <label class="form-check-label" for="flavor2">Flavor 2</label>
+                                        </div>
+                                        <div class="form-check mt-1">
+                                          <input class="form-check-input" type="checkbox" id="flavor3" value="unchecked">
+                                          <label class="form-check-label" for="flavor3">Flavor 3</label>
+                                        </div>
+                                        <div class="form-check mt-1">
+                                          <input class="form-check-input" type="checkbox" id="flavor4" value="unchecked">
+                                          <label class="form-check-label" for="flavor4">Flavor 4</label>
+                                        </div>
+                                  </div>                                
+                                </div>
+                                <div class="d-grid mt-1 mb-1">
+                                    <button type="submit" class="btn btn-primary waves-effect waves-float waves-light" data-bs-dismiss="modal">Save</button>
+                                  </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- Select Flavors/Sides modal ends here-->
+
+                  </section>
+                <!-- Menu Accordions end here -->
 
             </div>
         </div>

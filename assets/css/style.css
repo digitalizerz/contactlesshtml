@@ -36,6 +36,12 @@ li.nav-item.me-auto {
 }
 
 /* Buttons start here */
+
+.btn.btn-primary-outline {
+    border: 1px solid #000;
+    border-radius: 25px;
+}
+
 .green-bg {
     background: #28a745 !important;
     border: #28a745 !important;
