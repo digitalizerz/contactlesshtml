@@ -13,7 +13,12 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 
 
 .accordion-buttons a {
-	padding: 0.5rem
+	padding: 1rem
+}
+
+.accordion-header {
+    margin-bottom: 0;
+    padding: 1rem 0;
 }
 
 .nav-tabs .nav-item {
