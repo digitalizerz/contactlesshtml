@@ -47,7 +47,7 @@ li.nav-item.me-auto {
 
 /* Buttons start here */
 
-.btn.btn-primary-outline {
+.btn.btn-primary-outline, .btn-outline-secondary {
     border: 1px solid #000;
     border-radius: 25px;
 }

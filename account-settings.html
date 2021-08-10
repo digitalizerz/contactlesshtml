@@ -58,12 +58,12 @@
                         <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">John Doe</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
-                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="grid"></i> Dashboard</a>
-                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="menu"></i> Menu </a>
+                        <a class="dropdown-item" href="dashboard.html"><i class="me-50" data-feather="grid"></i> Dashboard</a>
+                        <a class="dropdown-item" href="menu.html"><i class="me-50" data-feather="menu"></i> Menu </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#"><i class="me-50" data-feather="user"></i> Profile</a>
-                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="settings"></i> Settings</a>
-                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="power"></i> Logout</a>
+                        <a class="dropdown-item" href="account-settings.html"><i class="me-50" data-feather="settings"></i> Settings</a>
+                        <a class="dropdown-item" href="login.html"><i class="me-50" data-feather="power"></i> Logout</a>
                     </div>
                 </li>
             </ul>
@@ -97,20 +97,22 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="marketing.html"><i data-feather="database"></i><span class="menu-title text-truncate" data-i18n="Home"> Marketing</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="membership.html"><i data-feather="gift"></i><span class="menu-title text-truncate" data-i18n="Home">Membership</span></a>
-                </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="qrbuilder.html"><i data-feather="cpu"></i><span class="menu-title text-truncate" data-i18n="Home">QR Builder</span></a>
                 </li>
 
-                <li class=" nav-item mt-2"><a class="d-flex align-items-center" href="#"><i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Page Layouts"> Account Info </span></a>
+                
+
+                 <li class=" nav-item mt-1 border-top"><a class="d-flex align-items-center" href="#"><i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Page Layouts"> Account Info </span></a>
                     <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="transactions.html"><i data-feather="credit-card"></i><span class="menu-item text-truncate" data-i18n="Collapsed Menu">Transactions</span></a>
+                        <li><a class="d-flex align-items-center" href="transactions.html"><i data-feather="credit-card"></i><span class="menu-item text-truncate" data-i18n="Collapsed Menu"> Payments </span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="membership.html"><i data-feather="gift"></i><span class="menu-item text-truncate" data-i18n="Layout Full"> Membership Plans</span></a>
                         </li>
                         <li><a class="d-flex align-items-center" href="account-settings.html"><i data-feather="settings"></i><span class="menu-item text-truncate" data-i18n="Layout Full">Account Settings</span></a>
                         </li>
                     </ul>
-                </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="login.html"><i data-feather="log-out"></i><span class="menu-title text-truncate" data-i18n="Home">Logout</span></a>
+                </li> 
+                <li class=" nav-item border-top"><a class="d-flex align-items-center" href="login.html"><i data-feather="log-out"></i><span class="menu-title text-truncate" data-i18n="Home">Logout</span></a>
                 </li>
             </ul>
         </div>
@@ -127,13 +129,149 @@
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
                             <h2 class="content-header-title float-start mb-0"> Account Settings </h2>
-                            <p class="restaurant-title"> {Restaurant name}</p>
                         </div>
                     </div>
                 </div>
                 
             </div>
             <div class="content-body">
+                
+                <!-- Account settings starts here-->
+
+                <section id="page-account-settings">
+                    <div class="row">
+                        <!-- left menu section -->
+                        <div class="col-md-3 mb-2 mb-md-0">
+                            <ul class="nav nav-pills flex-column nav-left">
+                                <!-- general -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="account-pill-general" data-bs-toggle="pill" href="#account-vertical-general" aria-expanded="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user font-medium-3 me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="fw-bold">General</span>
+                                    </a>
+                                </li>
+                                <!-- change password -->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="account-pill-password" data-bs-toggle="pill" href="#account-vertical-password" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock font-medium-3 me-1"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                        <span class="fw-bold">Change Password</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--/ left menu section -->
+
+                        <!-- right content section -->
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="tab-content">
+                                        <!-- general tab -->
+                                        <div role="tabpanel" class="tab-pane active show" id="account-vertical-general" aria-labelledby="account-pill-general" aria-expanded="true">
+                                            <!-- form -->
+                                            <form class="validate-form mt-2" novalidate="novalidate">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-username">User Name</label>
+                                                            <input type="text" class="form-control" id="username-name" name="username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="basicSelect">Account Role</label>
+                                                            <select class="form-select" id="basicSelect">
+                                                               <option> Manager </option>
+                                                               <option>Orders Staff</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-username">First Name</label>
+                                                            <input type="text" class="form-control" id="user-first-name" name="firstname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-name">Last Name</label>
+                                                            <input type="text" class="form-control" id="user-last-name" name="lastname">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-e-mail">E-mail</label>
+                                                            <input type="email" class="form-control" id="user-account-e-mail" name="email" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-company">Phone Number</label>
+                                                            <input type="tel" class="form-control" id="user-phone-number" name="company">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-75">
+                                                        <div class="alert alert-warning mb-50" role="alert">
+                                                            <h4 class="alert-heading">Your email is not confirmed. Please check your inbox.</h4>
+                                                            <div class="alert-body">
+                                                                <a href="javascript: void(0);" class="alert-link">Resend confirmation</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary mt-2 me-1 waves-effect waves-float waves-light">Save changes</button>
+                                                        <button type="reset" class="btn btn-outline-secondary mt-2 waves-effect">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ general tab -->
+
+                                        <!-- change password -->
+                                        <div class="tab-pane fade" id="account-vertical-password" role="tabpanel" aria-labelledby="account-pill-password" aria-expanded="false">
+                                            <!-- form -->
+                                            <form class="validate-form" novalidate="novalidate">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-new-password">New Password</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" id="account-new-password" name="new-password" class="form-control" placeholder="New Password">
+                                                                <div class="input-group-text cursor-pointer">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="mb-1">
+                                                            <label class="form-label" for="account-retype-new-password">Confirm New Password</label>
+                                                            <div class="input-group form-password-toggle input-group-merge">
+                                                                <input type="password" class="form-control" id="account-retype-new-password" name="confirm-new-password" placeholder="New Password">
+                                                                <div class="input-group-text cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary me-1 mt-1 waves-effect waves-float waves-light">Save changes</button>
+                                                        <button type="reset" class="btn btn-outline-secondary mt-1 waves-effect">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!--/ form -->
+                                        </div>
+                                        <!--/ change password -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ right content section -->
+                    </div>
+                </section>
+
+                <!-- Acount settings starts here-->
                 
 
                 
