@@ -45,6 +45,11 @@ li.nav-item.me-auto {
     line-height: 2.3rem;
 }
 
+.preview-restaurant {
+    color: #28a745;
+    font-weight: 500;
+}
+
 /* Buttons start here */
 
 .btn.btn-primary-outline, .btn-outline-secondary {
