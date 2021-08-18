@@ -21,6 +21,14 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
     padding: 1rem 0;
 }
 
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
 .nav-tabs .nav-item {
     position: relative;
     width: 50%;
@@ -161,3 +169,84 @@ li.nav-item.me-auto {
     color: #000;
     text-align: center;
 }
+
+
+/* Menu section styles */
+
+.menu-items-row {
+    padding: 1.5rem 1rem;
+}
+
+.menu-item-img {
+    width: 50px;
+}
+
+.menu-items-row p {
+    font-size: 0.850rem;
+}
+
+.menu-items-row .card {
+    border-top: 3px solid #000;
+}
+
+.menu-items-row .card-header {
+    padding: 1rem;
+}
+
+.menu-items-row .card-title {
+    font-size: 1.2rem;
+}
+
+.card-header .dropdown .btn {
+    background: #f1f1f1;
+    border-radius: 25px;
+    padding: 0.3rem;
+    color: #000;
+}
+
+.dynamic-input .btn {
+    border-radius: 5px;
+}
+
+
+
+
+/* DRAGGLE COMPONENTS CSS */
+
+.draggable {
+    cursor: move; }
+  
+  .gu-unselectable .draggable {
+    cursor: grabbing; }
+  
+  #multiple-list-group-a,
+  #multiple-list-group-b {
+    min-height: 5.714rem; }
+  
+  #dd-with-handle .list-group {
+    min-height: 5.714rem; }
+  
+  #dd-with-handle .list-group .handle {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(34, 41, 47, 0.1);
+    cursor: move;
+    font-size: 1.2rem; }
+  
+  .gu-mirror .card {
+    margin: 0 1rem; }
+  
+  .gu-mirror .handle {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(34, 41, 47, 0.1);
+    cursor: move;
+    font-size: 1.2rem; }
+  
+  .dark-layout .gu-mirror {
+    color: #b4b7bd; }
+  
+  .dark-layout .gu-mirror:not(.badge):not([class*='col-']) {
+    background-color: #283046;
+    border-color: #3b4253;
+    box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.24); }
