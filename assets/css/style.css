@@ -113,6 +113,22 @@ li.nav-item.me-auto {
     color: #28a745 !important;
 }
 
+.feather-check-circle, .feather-eye, .no-bg-feather-plus {
+    color: #28a745;
+}
+
+.feather-x-circle, .feather-trash {
+    color: #dc3545;
+}
+
+.feather-edit-2 {
+    color: #007bff;
+}
+
+/* .bg-feather-plus {
+    color: #fff;
+} */
+
 
 /* Buttons end here */
 

@@ -211,18 +211,21 @@
                                           </h2>
                                           </div>
                                           <div class="col-md-3 accordion-buttons mt-1 mb-1">
-                                              <a type="button" class="btn btn-primary waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#">
-                                                  <i data-feather="folder-plus"></i>
-                                              </a>
-                                                <a type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuItemModal">
+                                              <span data-bs-toggle="modal" data-bs-target="#addMenuItemModal">
+                                                <a type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Add menu item">
                                                   <i data-feather="plus"></i>
                                                 </a>
-                                                <a type="button" class="btn btn-primary blue-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#addMenuCategoryModal">
-                                                  <i data-feather="edit"></i>
-                                                </a>
-                                                <a type="button" class="btn btn-primary red-bg waves-effect waves-float waves-light" data-bs-toggle="modal" data-bs-target="#">
-                                                  <i data-feather="trash-2"></i>
-                                                </a>
+                                                </span>
+                                                <span data-bs-toggle="modal" data-bs-target="#addMenuCategoryModal">
+                                                  <a type="button" class="btn btn-primary blue-bg waves-effect waves-float waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit this category">
+                                                      <i data-feather="edit"></i>
+                                                  </a>
+                                                  </span>
+                                                  <span data-bs-toggle="modal" data-bs-target="#">
+                                                    <a type="button" class="btn btn-primary red-bg waves-effect waves-float waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete this category">
+                                                        <i data-feather="trash-2"></i>
+                                                    </a>
+                                                    </span>
                                           </div>
                                           </div>
 
@@ -239,7 +242,7 @@
                                                               </button>
                                                               <div class="dropdown-menu">
                                                                 <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#selectFlavorsandSidesModal">
-                                                                  <i data-feather="plus" class="me-50"></i>
+                                                                  <i data-feather="plus" class="me-50 no-bg-feather-plus"></i>
                                                                   <span>Add Sides/Flavors</span>
                                                               </a>
                                                                   <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#addMenuItemModal">

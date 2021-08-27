@@ -140,133 +140,202 @@
                 
             </div>
             <div class="content-body">
-               
-                   <!-- Orders table starts here -->
-<section id="advanced-search-datatable">
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header border-bottom">
-            <h4 class="card-title">Search Orders </h4>
-          </div>
-          <!--Search Form -->
-          <div class="card-body mt-2">
-            <form class="dt_adv_search" method="POST">
-              <div class="row g-1 mb-md-1">
-                <div class="col-md-4">
-                  <label class="form-label">Customer:</label>
-                  <input
-                    type="text"
-                    class="form-control dt-input dt-full-name"
-                    data-column="1"
-                    placeholder=""
-                    data-column-index="0"
-                  />
+
+
+
+              <!-- BASIC TABLE STARTS HERE -->
+              <div class="row" id="basic-table">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title"> Search Orders</h4>
+                        </div>
+                        <div class="card-body">
+                        <form class="" method="POST">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <label class="form-label">Customer:</label>
+                              <input type="text" class="form-control dt-input dt-full-name" />
+                            </div>
+                            <div class="col-md-4">
+                              <label class="form-label"> Menu Item:</label>
+                              <input type="text" class="form-control dt-input dt-item-name" />
+                            </div>
+                            <div class="col-md-4">
+                              <label class="form-label">Price:</label>
+                              <input type="text" class="form-control dt-input dt-price" />
+                            </div>
+                          </div>
+
+                          <div class="row mt-1">
+                            <div class="col-md-4">
+                              <label class="form-label">Table:</label>
+                              <input type="number" class="form-control dt-input dt-table" />
+                            </div>
+                            <div class="col-md-4">
+                              <label class="form-label">Date & Time:</label>
+                              <div class="mb-0">
+                                <input type="date" class="form-control dt-date flatpickr-range dt-input" placeholder="StartDate to EndDate" name="dt_date" />
+                                <input type="hidden" class="form-control dt-date start_date dt-input" name="value_from_start_date" />
+                                <input type="hidden" class="form-control dt-date end_date dt-input" name="value_from_end_date" />
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <label class="form-label" for="basicSelect"> Order Status</label>
+                                <select class="form-select" id="basicSelect">
+                                  <option></option>
+                                  <option> Pending </option>
+                                  <option>Completed </option>
+                                </select>
+                            </div>
+                          </div>
+                        </form>
+                        </div>
+
+                       <!-- Table items filter -->
+                        <div class="row mb-1">
+                          <div class="d-flex justify-content-between align-items-center mx-0 row">
+                            <div class="col-sm-12 col-md-2"><div class="dataTables_length" id="DataTables_Table_0_length">
+                              <label class="form-label" for="basicSelect">Show orders</label>
+                                <select class="form-select" id="basicSelect">
+                                  <option value="10">10</option>
+                                  <option value="25">25</option>
+                                  <option value="50">50</option>
+                                  <option value="100">100</option>
+                                </select>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                       
+                        <!-- Table rows and columns start here-->
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                      <th>Table</th>
+                                      <th>Customer</th>
+                                      <th>Menu Item</th>
+                                      <th>Price</th>
+                                      <th>Date & Time</th>
+                                      <th>Order Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="fw-bold"> #5 </span>
+                                        </td>
+                                        <td> John Doe </td>
+                                        <td> Lamb Chops, Mashed Potatoes </td>
+                                        <td> $44 </td>
+                                        <td> 8/26/2021 @ 4:03pm</td>
+                                        <td class="d-flex">
+                                          <span class="badge rounded-pill badge-light-success me-1"> Completed </span>
+                                          <div class="dropdown">
+                                              <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i data-feather="more-vertical"></i>
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                  <i data-feather="check-circle" class="me-50"></i>
+                                                  <span>Accept order</span>
+                                              </a>
+                                              <a class="dropdown-item" href="#">
+                                                  <i data-feather="x-circle" class="me-50"></i>
+                                                  <span>Reject order</span>
+                                              </a>
+                                              </div>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                          <span class="fw-bold"> #11 </span>
+                                      </td>
+                                      <td> Tamika Wallace </td>
+                                      <td> Chicken Wings, Fries </td>
+                                      <td> $18 </td>
+                                      <td> 8/26/2021 @ 5:44pm</td>
+                                        <td class="d-flex">
+                                          <span class="badge rounded-pill badge-light-warning me-1"> Pending </span>
+                                          <div class="dropdown">
+                                              <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i data-feather="more-vertical"></i>
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                  <a class="dropdown-item" href="#">
+                                                      <i data-feather="check-circle" class="me-50"></i>
+                                                      <span>Accept order</span>
+                                                  </a>
+                                                  <a class="dropdown-item" href="#">
+                                                      <i data-feather="x-circle" class="me-50"></i>
+                                                      <span>Reject order</span>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>
+                                        <span class="fw-bold"> #8 </span>
+                                    </td>
+                                    <td> Ashley Johnson </td>
+                                    <td> Jerk Chicken and Rice </td>
+                                    <td> $27 </td>
+                                    <td> 8/25/2021 @ 8:36pm</td>
+                                        <td class="d-flex">
+                                          <span class="badge rounded-pill badge-light-danger me-1"> Rejected </span>
+                                          <div class="dropdown">
+                                              <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                                  <i data-feather="more-vertical"></i>
+                                              </button>
+                                              <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                  <i data-feather="check-circle" class="me-50"></i>
+                                                  <span>Accept order</span>
+                                              </a>
+                                              <a class="dropdown-item" href="#">
+                                                  <i data-feather="x-circle" class="me-50"></i>
+                                                  <span>Reject order</span>
+                                              </a>
+                                              </div>
+                                          </div>
+                                      </td>
+                                </tr>
+                                   
+                                   
+                                   
+                                </tbody>
+                            </table>
+                           
+                            <!-- Table pagination -->
+                            <div class="d-flex justify-content-between mx-0 row mt-1">
+                              <div class="col-sm-12 col-md-6">
+                                <div role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div>
+                              </div>
+                              <div class="col-sm-12 col-md-6">
+                                <div class="" id="">
+                                  <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled">
+                                      <a href="#" class="page-link">&nbsp;</a>
+                                    </li>
+                                    <li class="paginate_button page-item next disabled">
+                                      <a href="#" class="page-link">&nbsp;</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                  <label class="form-label">Order Name:</label>
-                  <input
-                    type="text"
-                    class="form-control dt-input"
-                    data-column="2"
-                    placeholder=""
-                    data-column-index="1"
-                  />
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Price:</label>
-                  <input
-                    type="number"
-                    class="form-control dt-input"
-                    data-column="3"
-                    placeholder=""
-                    data-column-index="2"
-                  />
-                </div>
-              </div>
-              <div class="row g-1">
-                <div class="col-md-4">
-                  <label class="form-label">Table:</label>
-                  <input
-                    type="number"
-                    class="form-control dt-input"
-                    data-column="4"
-                    placeholder=""
-                    data-column-index="3"
-                  />
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Date & Time:</label>
-                  <div class="mb-0">
-                    <input
-                      type="date"
-                      class="form-control dt-date flatpickr-range dt-input"
-                      data-column="5"
-                      placeholder="StartDate to EndDate"
-                      data-column-index="4"
-                      name="dt_date"
-                    />
-                    <input
-                      type="hidden"
-                      class="form-control dt-date start_date dt-input"
-                      data-column="5"
-                      data-column-index="4"
-                      name="value_from_start_date"
-                    />
-                    <input
-                      type="hidden"
-                      class="form-control dt-date end_date dt-input"
-                      name="value_from_end_date"
-                      data-column="5"
-                      data-column-index="4"
-                    />
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label">Status:</label>
-                  <input
-                    type="text"
-                    class="form-control dt-input"
-                    data-column="6"
-                    placeholder=""
-                    data-column-index="5"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-          <hr class="my-0" />
-          <div class="card-datatable">
-            <table class="dt-advanced-search table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Table</th>
-                  <th>Order Name</th>
-                  <th>Customer</th>
-                  <th>Price</th>
-                  <th>Date & Time</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tfoot>
-                <tr>
-                  <th></th>
-                  <th>Table</th>
-                  <th>Order Name</th>
-                  <th>Customer</th>
-                  <th>Price</th>
-                  <th>Date & Time</th>
-                  <th>Status</th>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Orders table ends here -->
+            </div> 
+
+
+              <!-- BASIC TABLE ENDS HERE-->
                 
 
             </div>
