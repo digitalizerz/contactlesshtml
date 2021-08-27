@@ -95,6 +95,11 @@ li.nav-item.me-auto {
     border: #0062cc !important;
 }
 
+.black-bg {
+    background: #000000 !important;
+    border: #000000 !important;
+}
+
 .blue-bg-outline, .blue-bg-outline:hover {
     background: #fff !important;
     border: 1px solid #007bff !important;
@@ -125,9 +130,6 @@ li.nav-item.me-auto {
     color: #007bff;
 }
 
-/* .bg-feather-plus {
-    color: #fff;
-} */
 
 
 /* Buttons end here */
