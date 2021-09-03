@@ -126,19 +126,27 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper container-xxl p-0">
             <div class="content-header row">
-                <div class="content-header-left col-md-5 col-12 mb-2">
+                <div class="content-header-left col-md-8 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
                             <h2 class="content-header-title float-start mb-0"> Dashboard </h2>
                         </div>
                     </div>
                 </div>
-                <div class="content-header-right text-md-end col-md-7 col-12 d-md-block">
-                    <div class="mb-1 breadcrumb-right">
+                <div class="content-header-right text-md-end col-md-4 col-12 d-md-block">
+                     <div class="mb-1 breadcrumb-right"> 
+                        <!-- <label class="form-label" for="basicSelect"> Order Status</label> -->
+                          <select class="form-select" id="basicSelect">
+                            <option>Restaurant 1</option>
+                            <option> Restaurant 2 </option>
+                            <option> Restaurant 3 </option>
+                          </select>
+                       </div> 
+                    <!-- <div class="mb-1 breadcrumb-right">
                         <a href="restaurant.html" type="button" class="btn btn-primary green-bg waves-effect waves-float waves-light">
                             <i data-feather="plus"></i> Manage Restaurants
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -159,7 +167,8 @@
                                 <div class="card-body statistics-body">
                                     <div class="row">
                                         <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
-                                            <div class="d-flex flex-row">
+                                            <a href="menu.html">
+                                            <div class="d-flex flex-row" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="View/Manage menus">
                                                 <div class="avatar black-bg me-2">
                                                     <div class="avatar-content">
                                                         <i data-feather="menu" class="avatar-icon"></i>
@@ -169,7 +178,8 @@
                                                     <h4 class="fw-bolder mb-0"> 54 </h4>
                                                     <p class="card-text font-small-3 mb-0">Total Menus </p>
                                                 </div>
-                                            </div>
+                                            </div>  
+                                           </a>
                                         </div>
                                         <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
                                             <div class="d-flex flex-row">
@@ -185,7 +195,8 @@
                                             </div>
                                         </div>
                                         <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
-                                            <div class="d-flex flex-row">
+                                            <a href="orders.html">
+                                            <div class="d-flex flex-row" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="View orders">
                                                 <div class="avatar black-bg me-2">
                                                     <div class="avatar-content">
                                                         <i data-feather="activity" class="avatar-icon"></i>
@@ -196,9 +207,11 @@
                                                     <p class="card-text font-small-3 mb-0">Completed Orders</p>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div>
                                          <div class="col-xl-3 col-sm-6 col-12">
-                                            <div class="d-flex flex-row">
+                                            <a href="marketing.html">
+                                            <div class="d-flex flex-row" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="View customers">
                                                 <div class="avatar black-bg me-2">
                                                     <div class="avatar-content">
                                                         <i data-feather="users" class="avatar-icon"></i>
@@ -209,6 +222,7 @@
                                                     <p class="card-text font-small-3 mb-0"> Total Customers</p>
                                                 </div>
                                             </div>
+                                            </a>
                                         </div> 
                                     </div>
                                 </div>

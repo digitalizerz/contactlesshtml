@@ -1,0 +1,149 @@
+/* Uber Theme Styles */
+
+
+img.res-external-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.content-header {
+    background: #000;
+}
+
+.res-external-logo {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.content-header h1 {
+    color: #fff;
+    padding: 1.5rem 0.5rem 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+.content-header .res-info-menu {
+    margin-top: 1.5rem;
+}
+
+.content-header .res-info-menu .btn {
+    color: #fff;
+    background: green;
+    border-radius: 25px;
+    padding: 0.3rem;
+}
+
+.offcanvas-bottom {
+    height: 50vh;
+}
+
+.res-menu-item-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+}
+
+.btn-add-item {
+    margin-left: -20px;
+    padding: 0.4rem;
+    margin-top: 2.5rem;
+}
+
+.col-menu-item .col-2 {
+    margin: 0 0.5rem;
+}
+
+.col-menu-item h4 {
+    font-weight: 600;
+}
+
+.menu-category-name {
+    padding: 0 0.5rem;
+    font-weight: 600;
+}
+
+
+/* Buttons start here */
+
+.btn.btn-primary-outline, .btn-outline-secondary {
+    border: 1px solid #000;
+    border-radius: 25px;
+}
+
+.green-bg {
+    background: #28a745 !important;
+    border: #28a745 !important;
+}
+
+.green-bg:hover, .green-bg:focus, .green-bg:active {
+    background: #1e7e34 !important;
+    border: #1e7e34 !important;
+}
+
+.red-bg {
+    background: #dc3545 !important;
+    border: #dc3545 !important;
+}
+
+.red-bg:hover, .red-bg:active, .red-bg:focus {
+    background: #bd2130 !important;
+    border: #bd2130 !important;
+}
+
+.blue-bg {
+    background: #007bff !important;
+    border: #007bff !important;
+}
+
+.blue-bg:hover, .blue-bg:active, .blue-bg:focus {
+    background: #0062cc !important;
+    border: #0062cc !important;
+}
+
+.black-bg {
+    background: #000000 !important;
+    border: #000000 !important;
+}
+
+.blue-bg-outline, .blue-bg-outline:hover {
+    background: #fff !important;
+    border: 1px solid #007bff !important;
+    color: #007bff !important;
+}
+
+.red-bg-outline, .red-bg-outline:hover {
+    background: #fff !important;
+    border: 1px solid #dc3545 !important;
+    color: #dc3545 !important;
+}
+
+.green-bg-outline, .green-bg-outline:hover {
+    background: #fff !important;
+    border: 1px solid #28a745 !important;
+    color: #28a745 !important;
+}
+
+
+.menu-categories-nav .nav-item {
+    padding-right: 1rem;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        margin-left: -14rem;
+    }
+  }
+
+
+  @media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        margin-left: 0rem;
+    }
+  }
